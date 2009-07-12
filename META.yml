@@ -4,6 +4,7 @@ author:
   - 'Hinrik Örn Sigurðsson, L<hinrik.sig@gmail.com>'
 build_requires:
   ExtUtils::MakeMaker: 6.42
+  Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.42
 distribution_type: module
@@ -22,4 +23,4 @@ requires:
   Term::ANSIColor: 0
 resources:
   license: http://opensource.org/licenses/artistic-license.php
-version: 0.01
+version: 0.02
