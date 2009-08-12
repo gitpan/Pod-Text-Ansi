@@ -19,8 +19,8 @@ no_index:
     - inc
     - t
 requires:
-  Pod::Text: 0
+  Pod::Text: 3.13
   Term::ANSIColor: 0
 resources:
   license: http://opensource.org/licenses/artistic-license.php
-version: 0.03
+version: 0.04

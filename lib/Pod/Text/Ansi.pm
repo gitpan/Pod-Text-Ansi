@@ -5,7 +5,7 @@ use warnings;
 use Term::ANSIColor qw(colored);
 
 use base 'Pod::Text';
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 # wrap every line in Ansi color codes
 sub color {
@@ -138,7 +138,11 @@ L<rra@stanford.edu>.
 
 =head1 CAVEATS
 
-It currently doesn't respect some forms of nesting. Example:
+=over
+
+=item * It currently doesn't respect some forms of nesting.
+
+Example:
 
  I<'italic', C<'italic code'>, 'italic'>.
 
@@ -148,6 +152,13 @@ only, then code only, then normal, respectively.
 Non-overlapping nesting such as the following does work, though:
 
  I< C<italic code> >
+
+=item * The wrapping code isn't perfect.
+
+Some formatting codes that stretch over multiple lines will break. One example
+would be an C<< LZ<><> >> code that's too long to fit on one line.
+
+=back
 
 =head1 LICENSE AND COPYRIGHT
 
