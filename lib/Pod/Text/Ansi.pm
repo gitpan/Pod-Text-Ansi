@@ -1,11 +1,16 @@
 package Pod::Text::Ansi;
+BEGIN {
+  $Pod::Text::Ansi::AUTHORITY = 'cpan:HINRIK';
+}
+BEGIN {
+  $Pod::Text::Ansi::VERSION = '0.05';
+}
 
 use strict;
-use warnings;
+use warnings FATAL => 'all';
 use Term::ANSIColor qw(colored);
 
 use base 'Pod::Text';
-our $VERSION = '0.04';
 
 # wrap every line in Ansi color codes
 sub color {
@@ -98,9 +103,8 @@ sub wrap {
 }
 
 1;
-__END__
 
-=encoding UTF-8
+=encoding utf8
 
 =head1 NAME
 
